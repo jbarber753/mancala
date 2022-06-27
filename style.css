@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Dosis&family=Open+Sans&family=Rubik+Moonrocks&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0px;
+    background-color: #3081d9;
+}
+
+main{
+    height: 100%;
+}
+
+.player1-scoreboard{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    background-color: #eb9b34;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+#score-display1{
+    position: absolute;
+    bottom: 30px;
+    font-size: 60px;
+    font-family: 'Bungee', cursive;
+    color: #3081d9;
+}
+
+.turn-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 570px;
+    height: 80px;
+    width: 300px;
+    background-color: #eb9b34;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+#current-turn{
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    color: #3081d9;
+}
+
+.player2-scoreboard{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: 1020px;
+    top: 50px;
+    background-color: #eb9b34;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+#score-display2{
+    position: absolute;
+    bottom: 30px;
+    font-size: 60px;
+    font-family: 'Bungee', cursive;
+    color: #3081d9;
+}
+
+.scoreboard-heading{
+    position: absolute;
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    color: #3081d9;
+}
+
+#board{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    height: 400px;
+    width: 1200px;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px 0 200px;
+    background-color: #6e3f2f;
+    border: solid black 2px;
+    border-radius: 30px;
+    box-shadow: 0px 20px #47291f, 0px 22px black;
+}
+
+.pit:nth-child(7){
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    right: 80px;
+    background-color: #47291f;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+.pit:nth-child(14){
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    background-color: #47291f;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+.pit{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #47291f;
+    border: solid black 2px;
+    border-radius: 50%;
+}
+
+.stone{
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    background-color: green;
+    border: solid black 2px;
+    border-radius: 50%;
+}
+
+.pit:hover{
+    border: solid red 2px;
+}
+
+.pit:nth-child(7):hover{
+    border: solid black 2px;
+}
+
+.pit:nth-child(14):hover{
+    border: solid black 2px;
+}
