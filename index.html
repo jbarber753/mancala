@@ -16,85 +16,30 @@
         <section class= "turn-display">
             <span id = "current-turn"></span>
         </section>
+        <section id= "reset-button">Reset Game</section>
         <section class="player2-scoreboard">
             <p class= "scoreboard-heading">Player 2 Score:</p>
             <span id = "score-display2"></span>
         </section>
         <section id = "board">
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
+            <div class = "player1-side">
+                <div class = "pit"> </div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
             </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
+            <div class = "pit" id = "player1-winspace"></div>
+            <div class = "player2-side">
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
+                <div class = "pit"></div>
             </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit"></div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit">
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-                <div class = "stone"></div>
-            </div>
-            <div class = "pit"></div>
+            <div class = "pit" id = "player2-winspace"></div>
         </section>
     </main>
     <script src="app.js"></script>

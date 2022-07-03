@@ -38,7 +38,7 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 570px;
     height: 80px;
     width: 300px;
@@ -51,6 +51,27 @@ main{
     font-family: 'Bungee', cursive;
     font-size: 30px;
     color: #3081d9;
+}
+
+#reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 170px;
+    left: 570px;
+    height: 80px;
+    width: 300px;
+    background-color: #eb9b34;
+    color: #3081d9;
+    font-size: 30px;
+    font-family: 'Bungee', cursive;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+
+#reset-button:hover{
+    border: solid red 2px;
 }
 
 .player2-scoreboard{
@@ -81,6 +102,22 @@ main{
     color: #3081d9;
 }
 
+#win-screen{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 420px;
+    height: 150px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    color: #eb9b34;
+    font-family: 'Bungee', cursive;
+    font-size: 60px;
+    border-radius: 30px;
+    box-shadow: 20px 0px 50px, 0px 20px 50px, -20px 0px 50px, 0px -20px 50px;
+}
+
 #board{
     display: flex;
     flex-direction: row;
@@ -99,7 +136,31 @@ main{
     box-shadow: 0px 20px #47291f, 0px 22px black;
 }
 
-.pit:nth-child(7){
+.player1-side{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 1200px;
+    position: absolute;
+    top: 200px;
+    padding: 0 200px 0 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player2-side{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 200px;
+    width: 1200px;
+    position: absolute;
+    bottom: 200px;
+    padding: 0 200px 0 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#player1-winspace{
     height: 300px;
     width: 100px;
     position: absolute;
@@ -109,7 +170,7 @@ main{
     border-radius: 30px;
 }
 
-.pit:nth-child(14){
+#player2-winspace{
     height: 300px;
     width: 100px;
     position: absolute;
@@ -127,30 +188,34 @@ main{
     justify-content: center;
     align-items: center;
     margin: 0 10px 0 10px;
+    padding: 10px;
     height: 100px;
     width: 100px;
     background-color: #47291f;
     border: solid black 2px;
     border-radius: 50%;
+    color: green;
+    font-size: 30px;
 }
 
 .stone{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     margin: 2px;
     background-color: green;
     border: solid black 2px;
     border-radius: 50%;
 }
 
-.pit:hover{
+#active{
     border: solid red 2px;
 }
 
-.pit:nth-child(7):hover{
-    border: solid black 2px;
+#active:hover{
+    border: solid green 2px;
+    box-shadow: 0 0 20px;
 }
 
-.pit:nth-child(14):hover{
+#player1-winspace, #player2-winspace{
     border: solid black 2px;
 }
